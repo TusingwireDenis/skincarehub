@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+{%load static%}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blessie's Skin Care Hub Blog</title>
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+</head>
+<body>
+    
+    <main>
+        <section class="blog-posts">
+            <center><h1 style="font-size: 300%; color: #711111; ">Latest Blog Posts</h1></center>
+            <div class="columns" style="background-color: rgb(183, 165, 199);">
+                
+<ul style="display: flex; list-style: none;">                  <li style=" flex-shrink: 0; 
+    width: 400px; 
+    height: auto; 
+    margin: 0; "><img src="{% static 'images/vaslin.jpg' %}" alt="Image 1" style=" width: 100%; 
+    height: 400px; 
+    display: flex;
+    border-radius: 5%; "></li>
+  <div class="column" style="background-color: darkolivegreen;">
+      <article>
+          <h2 style="color: bisque;">Skincare Tips for Acne-Prone Skin</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+          <button style="color: aqua;" class="button"> Read More</button>
+      </article>
+      </div>
+      <div class="column">
+      <article>
+          <h2 style="color: aqua;">Benefits of Facial Massage for Glowing Skin</h2>
+          <p><ul style="color: gold;"><li>Improves on blood circulation</li><li>Relaxes facial muscless</li><li>Reducess puffiness</li><li>Enhances skin elasticity</li></ul></p>
+          <button style="color: aquamarine;" class="button">Read More</button>
+      </article>
+  </div>
+  <div class="column">
+    <article>
+        <h2 style="color:blanchedalmond"> DIY Skincare Recipes for a Radiant Glow</h2>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+        <button style="color: aqua;" class="button">Read More</button>
+    </article>
+</div>
+</ul>
+                <div class="column">
+                        <img src="{% static 'images/2.jpg' %}" alt="pic1" style="width: 280px; height: 500px; padding: 10px; margin: 20px; box-shadow: 0 0 10px rgba(0, green, blue, 0.2);" >
+                       </div>
+                       <div class="column">
+                        <article>
+                            <h2 style="color:blanchedalmond"> DIY Skincare Recipes for a Radiant Glow</h2>
+                            <hr>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                            <button style="color: aqua;" class="button">Read More</button>
+                        </article>
+                        <img src="{% static 'images/stock.jpg' %}" alt="pic1" style="width: 250px; height: 350px; padding: 10px; margin: 20px; border-radius: 20%;" >
+                    </div>
+               
+                    <div class="column">
+                    <article>
+                        <h2 style="color:blanchedalmond"> DIY Skincare Recipes for a Radiant Glow</h2>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                        <button style="color: aqua;" class="button">Read More</button>
+                    </article>
+                </div>
+                <div class="column">
+                    <article>
+                        <h2 style="color:blanchedalmond"> DIY Skincare Recipes for a Radiant Glow</h2>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                        <button style="color: aqua;" class="button">Read More</button>
+                    </article>
+                </div>
+                
+            </div>
+        </section>
+        <ul style="display: none; list-style: none;">
+            <li>Vist Us On:</li>
+            <li>                        <img src="{% static 'images/facebook.jpg' %}" alt="pic1" style="width: 10px; height: 10px; padding: 10px; margin: 20px; border-radius: 50%;" >BlessieSkinCare</li>
+        <li>Twitter</li>
+        <li>Instagram</li>
+        </ul>
+    </main>
+  
+    <script>
+        // Add event listeners to the buttons
+        const buttons = document.querySelectorAll('button');
+        buttons.forEach(button => {
+            button.addEventListener('mouseover', () => {
+                button.style.transform = 'scale(1.1)';
+            });
+            button.addEventListener('mouseout', () => {
+                button.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+<hr style="size: 0.5cm;">
+<footer class="footer">
+<marquee behavior="" direction="right"><p>BLESSIE SKIN-CARE. All rights reserved</p>
+<button> Vist Us On:</button>
+    <ul style="display: flex; list-style: none; gap: 5px; color: aqua;">
+        <li><img src="{% static 'images/facebook.jpg' %}" alt="pic1" style="width: 50px; height: 50px;  border-radius: 50%;" >BlessieSkinCare</li>
+    <li><img src="{% static 'images/Twitter.jpg' %}" alt="pic1" style="width: 50px; height: 50px;  border-radius: 50%;" >Twitter @BlessieSkinCare</li>
+    <li><img src="{% static 'images/sapp.jpg' %}" alt="pic1" style="width: 50px; height: 50px;  border-radius: 50%;" >0763814037</li>
+    <li><img src="{% static 'images/insta.jpg' %}" alt="pic1" style="width: 50px; height: 50px;  border-radius: 50%;" >BlessieSkinCare Instagram</li>
+    blessieskincare20@gmail.com
+    <li><div>&#128155; &#128156;&#128151;</div></li>
+    </ul>
+    </marquee>
+</footer>
+</html>
+{% endblock %}

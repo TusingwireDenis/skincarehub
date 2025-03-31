@@ -1,0 +1,27 @@
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devicewith, initial-scale=1.0">
+<title>Blessie skin-care</title>
+<link rel="stylesheet" href="{%static 'style.css'%}">
+</head>
+<body>
+
+<header>
+    <center>
+    <nav>
+        <ul>
+           <b><li><a href="{%url 'home' %}">Home</a></li>
+            <li><a href="{%url 'services' %}">Services</a></li>
+            <li><a href="{%url 'about' %}">About</a></li>
+            <li><a href="{%url 'blog' %}">Blog</a></li>
+            <li><a href="{%url 'testmonials' %}">Testmonials</a></li>
+            <li><a href="{%url 'testmonials' %}">REGISTER</a></li></b>
+        </ul>
+    </nav>
+</center>
+</header>
+
+
+{% block content %}{% endblock %}

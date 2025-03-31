@@ -1,0 +1,168 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+{%load static%}
+{%block content%}
+<html lang="en">
+  <main class="  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;">
+  <h3 style="color: #75ab4f; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 200%;"><center>Real Results from Our Satisfied Clients</center></h3>
+    <section class="testimonial-section" style="    background-color: #bfb5b5;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(43, 3, 3, 0.1);">
+      <div class="testimonial-container" style="    display: flex;
+      flex-direction: row;
+      align-items: center;">
+          <div class="testimonial-image" style="    margin-right: 20px;">
+              <img src="{% static 'images/den2.jpg' %}" alt="Testimonial Image" style="width: 300px;
+              height: 300px;
+              border-radius: 50%;"></div>
+          <div class="testimonial-content" style="flex-grow: 1;">
+              <h2 style="  font-size: 24px; margin-top: 0;">Im so free from acne</h2>
+              <p style="    font-size: 18px;
+    margin-bottom: 20px;">"I've struggled with acne for years, but after using the Skin Care Hub's products, I've seen a significant improvement in my skin. It's clearer, smoother, and more radiant than ever before!"</p>
+              <p style="    font-size: 18px;
+    margin-bottom: 20px;">- Denis T, Age 29</p>
+          </div>
+      </div>
+  </section>
+        <section class="testimonial-section" style="    background-color: #f7f7f7;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    ">
+            <div class="testimonial-container" style="    display: flex;
+            flex-direction: row;
+            align-items: center;
+        ">
+                <div class="testimonial-image" style="margin-right: 20px;">
+                    <img src="{% static 'images/den.jpg' %}" alt="Testimonial Image" style="    width: 300px;
+                    height: 300px;
+                    border-radius: 50%;
+                ">
+                </div>
+                <div class="testimonial-content" style="    flex-grow: 1;">
+                    <h2 style="    font-size: 24px;
+                    margin-top: 0;
+                ">My face is never with pimples anymore</h2>
+                    <p style="    font-size: 18px;
+                    margin-bottom: 20px;
+                ">"I've struggled with pimples for years, i couldnt take any selfie or goo out with my friends but after using the Skin Care Hub's products, I've seen a significant improvement in my skin. It's clearer, smoother, and more radiant than ever before!"</p>
+                    <p style="    font-size: 18px;
+                    margin-bottom: 20px;
+                ">Willy P., Age 26</p>
+                </div>
+            </div>
+        </section>
+        <section class="testimonial-section" style="    background-color: #95a28c;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px rgba(115, 58, 58, 0.1);
+        width: 600px;
+        display: flex;
+    ">
+            <div class="testimonial-container" style="    display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 40px;
+        ">
+                <div class="testimonial-image" style="margin-right: 20px;">
+                    <img src="{% static 'images/praise.jpg' %}" alt="Testimonial Image" style="    width: 300px;
+                    height: 300px;
+                    border-radius: 50%;
+                ">
+                </div>
+                <div class="testimonial-content" style="    flex-grow: 1;">
+                    <h2 style="    font-size: 24px;
+                    margin-top: 0;
+                ">Our skin is never itching anymore</h2>
+                    <p style="    font-size: 18px;
+                    margin-bottom: 20px;
+                ">"We struggled with itching  for years while AT school, but after using the Skin Care Hub's products, I've seen a significant improvement in my skin. It's clearer, smoother, and more radiant than ever before!"</p>
+                    <p style="    font-size: 18px;
+                    margin-bottom: 20px;
+                ">Praise and Fortunate., Age 11</p>
+                </div>
+            </div>
+        </section>
+  </main>
+  <div class="gallery-container">
+  <ul class="gallery" style="display: flex; 
+  transition: transform 0.5s ease-in-out; 
+  padding: 0;
+  margin: 0;
+  list-style: none; ">
+    <li style=" flex-shrink: 0; 
+    width: 150px; 
+    height: auto; 
+    margin: 0; "><img src="{% static 'images/lashes.jpg' %}" alt="Image 1" style=" width: 100%; 
+    height: 150px; 
+    display: flex;
+    border-radius: 50%; "></li>
+     <li style=" flex-shrink: 0; 
+     width: 150px; 
+     height: auto; 
+     margin: 0; "><img src="{% static 'images/gross.jpg' %}" alt="Image 1" style=" width: 100%; 
+     height: 150px; 
+     display: flex;
+     border-radius: 50%; "></li>
+       <li style=" flex-shrink: 0; 
+       width: 150px; 
+       height: auto; 
+       margin: 0; "><img src="{% static 'images/makeup.jpg' %}" alt="Image 1" style=" width: 100%; 
+       height: 150px; 
+       display: flex;
+       border-radius: 50%; "></li>
+         <li style=" flex-shrink: 0; 
+         width: 150px; 
+         height: auto; 
+         margin: 0; "><img src="{% static 'images/crystal.jpg' %}" alt="Image 1" style=" width: 100%; 
+         height: 150px; 
+         display: flex;
+         border-radius: 50%; "></li>
+           <li style=" flex-shrink: 0; 
+           width: 150px; 
+           height: auto; 
+           margin: 0; "><img src="{% static 'images/masaji.jpg' %}" alt="Image 1" style=" width: 100%; 
+           height: 150px; 
+           display: flex;
+           border-radius: 50%; "></li>
+             <li style=" flex-shrink: 0; 
+             width: 150px; 
+             height: auto; 
+             margin: 0; "><img src="{% static 'images/shop.jpg' %}" alt="Image 1" style=" width: 100%; 
+             height: 150px; 
+             display: flex;
+             border-radius: 50%; "></li>
+               <li style=" flex-shrink: 0; 
+               width: 150px; 
+               height: auto; 
+               margin: 0; "><img src="{% static 'images/stick.jpg' %}" alt="Image 1" style=" width: 100%; 
+               height: 150px; 
+               display: flex;
+               border-radius: 50%; "></li>
+  </ul>
+  <div class="gallery-controls">
+    <button class="button">&lt;</button>
+    <button class="button">&gt;</button>
+  </div>
+</div>
+
+  <hr style="size: 0.5cm;">
+  <footer class="footer">
+  <marquee behavior="" direction="right"><p>BLESSIE SKIN-CARE. All rights reserved</p>
+    <button> Vist Us On:</button>
+    <ul style="display: flex; list-style: none; gap: 5px; color: aqua;">
+        <li><img src="{% static 'images/facebook.jpg' %}" alt="pic1" style="width: 50px; height: 50px;  border-radius: 50%;" >BlessieSkinCare</li>
+    <li><img src="{% static 'images/Twitter.jpg' %}" alt="pic1" style="width: 50px; height: 50px;  border-radius: 50%;" >@BlessieSkinCare</li>
+    <li><img src="{% static 'images/sapp.jpg' %}" alt="pic1" style="width: 50px; height: 50px;  border-radius: 50%;" >0763814037</li>
+    <li><img src="{% static 'images/insta.jpg' %}" alt="pic1" style="width: 50px; height: 50px;  border-radius: 50%;" >BlessieSkinCare</li>
+    blessieskincare20@gmail.com
+    <li><div>&#128155; &#128156;&#128151;</div></li>
+    </ul> 
+</marquee> 
+</footer>
+</html>
+{% endblock %}

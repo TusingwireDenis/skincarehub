@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+{%load static%}
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blessie's Skin Care Hub</title>
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+</head>
+<body> 
+    <center>
+    <section id="home">
+        <h1 style="color: #333; font-family: Arial, Helvetica, sans-serif; font-size: 36px; font-weight: bold; display: block; padding-block-end: 20px;">Welcome to Blessie's Skin Care Hub</h1>
+        <p>Where beauty meets care</p><br>
+        <button class="btn" style="color: aqua;">Book an Appointment</button><br><br>
+    </section>
+    <section id="services">
+        <h2 style="color: #333;">Our Services</h2>
+        <div class="column">
+            <div class="service-card">
+                <h3 style="color: blueviolet;">Facial Treatments</h3>
+                <img src="{% static 'images/hairdresser.jpg' %}" alt="hair" style="width:300px; height: 120px; border-radius: 5%;">
+                <button class="btn">Learn More</button>
+            </div>
+            <div class="service-card">
+                <h3 style="color: blueviolet;">Body Treatments</h3>
+                <img src="{% static 'images/lotion1.jpg' %}" alt="hair" style="width:300px; height: 120px; border-radius: 5%;">
+                <button class="btn">Learn More</button>
+            </div>
+            <div class="service-card">
+                <h3 style="color: blueviolet;">Skincare Products</h3>
+                <img src="{% static 'images/stock.jpg' %}" alt="hair" style="width:300px; height: 120px; border-radius: 5%;">
+                <button class="btn">Learn More</button>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h2 style="color: blueviolet;">About Us</h2>
+        <img src="{% static 'images/vuta.jpg' %}" alt="hair" style="width:300px; height: 120px; border-radius: 5%;">
+    </section>
+    <section id="contact">
+        <h2 style="color: blueviolet;">Get in Touch</h2>
+        <p>Phone: 01234 567890</p>
+        <p>Email: [info@blessiesskincarehub.com](mailto:info@blessiesskincarehub.com)</p>
+    </section>
+
+    <script>
+        // Add event listeners to the buttons
+        const buttons = document.querySelectorAll('.btn');
+        buttons.forEach(button => {
+            button.addEventListener('mouseover', () => {
+                button.style.transform = 'scale(1.1)';
+            });
+            button.addEventListener('mouseout', () => {
+                button.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+    </center>
+</body>
+<hr style="size: 0.5cm;">
+<footer class="footer">
+<marquee behavior="" direction="right"><p>BLESSIE SKIN-CARE. All rights reserved</p>
+<button> Vist Us On:</button>
+    <ul style="display: flex; list-style: none; gap: 5px; color: aqua;">
+        <li><img src="{% static 'images/facebook.jpg' %}" alt="pic1" style="width: 50px; height: 50px;  border-radius: 50%;" >BlessieSkinCare</li>
+    <li><img src="{% static 'images/Twitter.jpg' %}" alt="pic1" style="width: 50px; height: 50px;  border-radius: 50%;" >@BlessieSkinCare</li>
+    <li><img src="{% static 'images/sapp.jpg' %}" alt="pic1" style="width: 50px; height: 50px;  border-radius: 50%;" >0763814037</li>
+    <li><img src="{% static 'images/insta.jpg' %}" alt="pic1" style="width: 50px; height: 50px;  border-radius: 50%;" >BlessieSkinCare</li>
+    blessieskincare20@gmail.com
+    <li><div>&#128155; &#128156;&#128151;</div></li>
+    </ul>
+    </marquee>
+</footer>
+</html>
+{% endblock %}
